@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:gravity="center" 
+  android:layout_height="fill_parent">
+	<ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/wcd" android:src="@drawable/cd" android:layout_marginLeft="108dp"/>
+	<ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/wbck1" android:src="@drawable/backlarge" android:layout_marginTop="4dp" /><ImageView android:id="@+id/radio_image" android:layout_below="@+id/wbck" android:src="@drawable/radio_icon" android:layout_alignParentTop="true" android:layout_marginTop="38dp" android:layout_width="128dp" android:layout_height="126dp" android:layout_marginLeft="12dp" /><ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/wbck" android:layout_alignParentTop="true" android:src="@drawable/mcase" /><TextView android:text="@string/app_name" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:textColor="#ccffffff" 
+		android:textStyle="bold" 
+		android:textSize="18dp" 
+		android:id="@+id/wlabel" 
+		android:layout_marginLeft="12dp" 
+		android:layout_marginTop="11dp"/>
+	
+	
+	
+	<TextView  
+		android:layout_height="wrap_content" 
+		android:id="@+id/radio_text" 
+		android:layout_below="@+id/wlabel" android:text="no station info" android:layout_width="160dp" android:background="@drawable/dark_name_bg" android:textColor="#ccffffff" android:layout_marginLeft="12dp" android:textSize="10dp" android:lines="3" android:textStyle="bold" android:layout_marginTop="88dp"/><ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/wbutton" android:layout_marginLeft="48dp" android:layout_marginTop="128dp" />
+</RelativeLayout>

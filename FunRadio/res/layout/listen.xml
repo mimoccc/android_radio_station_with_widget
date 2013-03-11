@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/dark_name_bg">
+  <RelativeLayout 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"><ImageView android:layout_height="fill_parent" android:layout_width="fill_parent" android:background="@drawable/darkbg"></ImageView><TextView android:id="@+id/StreamTextView" android:text="@string/msg_listen_nothing" android:textStyle="italic" android:ellipsize="marquee" android:layout_width="fill_parent" android:layout_height="48dp" android:layout_marginTop="16dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+  <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/progress_bar" android:layout_below="@+id/StreamTextView" android:layout_marginLeft="8dp"><ImageButton android:id="@+id/StreamPlayButton" android:layout_width="wrap_content" android:src="@android:drawable/ic_media_play" android:scaleType="centerInside" android:layout_height="48dip" />
+  <SeekBar android:id="@+id/StreamProgressBar" android:layout_height="wrap_content" android:max="100" android:layout_gravity="center_vertical" android:layout_weight="1.0" android:layout_width="fill_parent" android:layout_marginLeft="5dp" android:paddingLeft="10dp"/>
+  <TextView android:id="@+id/StreamLengthText" android:layout_marginRight="5dp" android:text="00:00 -  00:00" android:layout_width="96dp" android:layout_height="fill_parent" android:gravity="center"/>
+  </LinearLayout>
+  
+  </RelativeLayout>
+  
+
+
+
+
+</RelativeLayout>

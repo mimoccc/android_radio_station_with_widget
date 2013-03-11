@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:background="@drawable/wall3">
+  <ImageView 
+  android:layout_alignParentBottom="true" 
+  android:layout_alignParentLeft="true" 
+  android:layout_alignParentRight="true" 
+  android:layout_alignParentTop="true" 
+  android:layout_height="fill_parent" 
+  android:layout_width="fill_parent" 
+  android:id="@+id/bck" />
+  <ImageView android:id="@+id/imgdock" 
+  android:layout_alignParentTop="true" 
+  android:layout_height="fill_parent" 
+  android:layout_width="fill_parent" 
+  android:src="@drawable/logo"/>
+  <RelativeLayout 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content" 
+  android:layout_alignParentTop="true" 
+  android:background="@drawable/dark_name_bg">
+  <TextView android:id="@+id/radio_label" 
+  android:text="@string/radio_app_name" android:layout_alignParentTop="true" android:textSize="28dp" android:textStyle="bold" android:typeface="normal" android:textColor="#ccffffff" android:layout_width="fill_parent" android:layout_height="48dp" android:padding="4dp" android:gravity="center_vertical" /><TextView android:layout_height="wrap_content" android:text="created by milan jurkulak mimoccc@gmail.com" android:id="@+id/author" android:textSize="10dp" android:textStyle="bold" android:layout_below="@+id/radio_label" android:layout_width="fill_parent" android:paddingLeft="4dp" />
+</RelativeLayout>
+  
+  <ViewFlipper
+    android:id="@+id/MainFlipper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/Logo"
+    android:layout_marginBottom="37dip">
+  </ViewFlipper>
+  <FrameLayout
+    android:id="@+id/MediaPlayer"
+    android:layout_width="fill_parent"
+    android:layout_height="130dip"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true">
+  </FrameLayout>
+
+
+
+</RelativeLayout>

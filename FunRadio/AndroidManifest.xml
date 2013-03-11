@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.mjdev.fun_radio" 
+  android:versionName="1.2.1" 
+  android:versionCode="7">
+  <application 
+  	android:icon="@drawable/radio_icon"
+  	android:label="@string/radio_app_name">
+    
+    <activity
+      android:label="@string/radio_app_name"
+      android:configChanges="keyboardHidden|orientation"
+      android:name="fun_radio" 
+      android:launchMode="singleTask"
+      android:theme="@android:style/Theme.Wallpaper.NoTitleBar">
+    
+      <intent-filter>
+        <action   android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    
+    </activity>
+
+    <activity android:name="ListenActivity"/>
+    
+     <provider
+     	android:name="com.mjdev.fun_radio.util.PlaylistProvider" 
+     	android:authorities="com.mjdev.fun_radio.util.Playlist" />
+      
+    <uses-library android:name="android.test.runner" />
+    
+  <service android:name="PlaybackService"/>
+  
+  <receiver 
+			android:name="com.mjdev.fun_radio.radio_widget" 
+			android:label="@string/radio_app_name">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data 
+				android:name="android.appwidget.provider"
+				android:resource="@xml/radio_widget" />
+</receiver>
+
+</application>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <instrumentation
+    android:targetPackage="com.mjdev.fun_radio"
+    android:name="android.test.InstrumentationTestRunner"/>
+  <uses-sdk android:minSdkVersion="7"/>
+</manifest>
